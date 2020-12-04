@@ -1,4 +1,9 @@
-from flask import Flask, render_template, redirect, url_for, request, render_template
+import os
+import pandas as pd 
+import numpy as np 
+import flask
+import pickle
+from flask import Flask, render_template, redirect, url_for, request
 
 # Create an instance of Flask
 app = Flask(__name__)
@@ -6,7 +11,7 @@ app = Flask(__name__)
 # Landing page
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return flask.render_template("index.html")
 
 # Route that will receive input form data
 @app.route("/user/add", methods=["GET", "POST"]) # need to figure this line out
