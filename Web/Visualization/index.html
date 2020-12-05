@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Final project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\CSS\styles.css">
+</head>
+
+<body>
+    <div class="col-md-12">
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Title</a>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <!-- Left Content Box -->
+                        <div class="box" style="padding-bottom: 20px;">
+                            <div class="box">
+                                <h3 class="title">Input Data</h3>
+                                <div class="container">
+                                    <div class="row" style="padding-bottom: 30px;">
+                                        <div class="u-form u-form-1">
+                                            <form action="#" method="POST"
+                                                class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+                                                style="padding: 0;" source="custom" name="form">
+                                                <div class="u-form-email u-form-group u-form-group-1">
+                                                    <label for="agel-f2a8"
+                                                        class="u-label u-text-palette-3-light-2 u-label-1">Your
+                                                        Age</label>
+                                                    <input type="age" placeholder="Enter Your Age" id="age-f2a8"
+                                                        name="Age" class="u-input u-input-rectangle u-palette-3-light-2"
+                                                        required="">
+                                                </div>
+                                                <div class="u-form-group u-form-name u-form-group-2">
+                                                    <label for="childer-f2a8"
+                                                        class="u-label u-text-palette-3-light-2 u-label-2">No. of
+                                                        children</label>
+                                                    <input type="text" placeholder="No. of children " id="childer-f2a8"
+                                                        name="no. child"
+                                                        class="u-input u-input-rectangle u-palette-3-light-2"
+                                                        required="">
+                                                </div>
+                                                <div class="u-form-group u-form-name u-form-group-2">
+                                                    <label for="bmi-f2a8"
+                                                        class="u-label u-text-palette-3-light-2 u-label-2">BMI</label>
+
+                                                    <input type="text" placeholder="BMI " id="bmi-f2a8" name="bmi"
+                                                        class="u-input u-input-rectangle u-palette-3-light-2"
+                                                        required="">
+                                                </div>
+
+                                                <div class="u-form-group u-form-name u-form-group-2">
+                                                    <label for="gender-f2a8"
+                                                        class="u-label u-text-palette-3-light-2 u-label-2">Select
+                                                        Gender</label>
+
+                                                    <select id="gender-f2a8" name="gender"
+                                                        class="u-input u-input-rectangle u-palette-3-light-2"
+                                                        required="">
+                                                        <option value=" 0">Gender</option>
+                                                        <option value=" 1">Male</option>
+                                                        <option value="2">Female</option>
+                                                    </select>
+                                                </div>
+                                                <div class="u-form-group u-form-name u-form-group-2">
+                                                    <label for="someker-f2a8"
+                                                        class="u-label u-text-palette-3-light-2 u-label-2">Smoker</label>
+
+                                                    <select id="someker-f2a8" name="smoker"
+                                                        class="u-input u-input-rectangle u-palette-3-light-2"
+                                                        required="">
+
+                                                        <option value=" 0">Smoker</option>
+                                                        <option value=" 1">Yes</option>
+                                                        <option value="2">No</option>
+                                                    </select>
+                                                </div>
+                                                <div class="u-form-group u-form-name u-form-group-2">
+                                                    <label for="region-f2a8"
+                                                        class="u-label u-text-palette-3-light-2 u-label-2">Select
+                                                        Region</label>
+
+                                                    <select id="region-f2a8" name="region"
+                                                        class="u-input u-input-rectangle u-palette-3-light-2"
+                                                        required="">
+                                                        <option value="1">--Please Select Region--</option>
+                                                        <option value="1">SouthWest</option>
+                                                        <option value="2">SouthEast</option>
+                                                        <option value="3">NorthWest</option>
+                                                        <option value="4">NorthEast</option>
+                                                    </select>
+                                                </div>
+                                                <div class="u-align-left u-form-group u-form-submit u-form-group-5">
+                                                    <a href="#"
+                                                        class="u-border-2 u-border-palette-3-light-2 u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <!-- Right Content Box -->
+                        <div class="box" style="padding-bottom: 20px;">
+                            <h3 class="title">Out put</h3>
+                            <!--out put -->
+
+                            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent.
+                            </div>
+                            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix
+                                errors then try again. </div>
+                            <input type="hidden" value="" name="recaptchaResponse">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="col-md-12">
+                        <section class="u-align-center u-clearfix u-image u-shading u-section-3" src=""
+                            data-image-width="100" data-image-height="256" id="sec-5989">
+                            <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                                <h2 class="u-text u-text-default u-text-1">Motion Chart
+                                    VIsualizastion </h2>
+                                <div class='tableauPlaceholder' id='viz1607136943704' style='position: relative'>
+                                    <noscript><a href='#'><img alt=' '
+                                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project11_16071369267720&#47;Dashboard2&#47;1_rss.png'
+                                                style='border: none' /></a></noscript><object class='tableauViz'
+                                        style='display:none;'>
+                                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                        <param name='embed_code_version' value='3' />
+                                        <param name='site_root' value='' />
+                                        <param name='name' value='Project11_16071369267720&#47;Dashboard2' />
+                                        <param name='tabs' value='no' />
+                                        <param name='toolbar' value='yes' />
+                                        <param name='static_image'
+                                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project11_16071369267720&#47;Dashboard2&#47;1.png' />
+                                        <param name='animate_transition' value='yes' />
+                                        <param name='display_static_image' value='yes' />
+                                        <param name='display_spinner' value='yes' />
+                                        <param name='display_overlay' value='yes' />
+                                        <param name='display_count' value='yes' />
+                                        <param name='language' value='en' />
+                                        <param name='filter' value='publish=yes' /></object>
+                                </div>
+                                <script type='text/javascript'>
+                                    var divElement = document.getElementById('viz1607136943704');
+                                    var vizElement = divElement.getElementsByTagName('object')[0];
+                                    if (divElement.offsetWidth > 800) {
+                                        vizElement.style.width = '1400px';
+                                        vizElement.style.minHeight = '450px'; vizElement.style.maxHeight = '887px';
+                                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                    }
+                                    else if (divElement.offsetWidth > 500) {
+                                        vizElement.style.width = '1200px';
+                                        vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px';
+                                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                    }
+                                    else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+                                    var scriptElement = document.createElement('script');
+                                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                                </script>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    </div>
+    </nav>
+    </div>
+
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-md-12">
+                <section class="u-align-center u-clearfix u-image u-shading u-section-3" src="" data-image-width="100"
+                    data-image-height="256" id="sec-5989">
+                    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                        <h1 class="u-text u-text-default u-title u-text-1">Forecast VIsualizastion</h1>
+                        <!-- <img src="..\Resources\images\oo.jpg" style="width:200px;height:128px;"> -->
+                        <div class='tableauPlaceholder' id='viz1607136756628' style='position: relative'>
+                            <noscript><a href='#'><img alt=' '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project1_16071365628530&#47;Dashboard1&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='Project1_16071365628530&#47;Dashboard1' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project1_16071365628530&#47;Dashboard1&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                                <param name='filter' value='publish=yes' /></object></div>
+                        <script type='text/javascript'>
+                            var divElement = document.getElementById('viz1607136756628');
+                            var vizElement = divElement.getElementsByTagName('object')[0];
+                            if (divElement.offsetWidth > 800) {
+                                vizElement.style.width = '1450px';
+                                vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px';
+                                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                            }
+                            else if (divElement.offsetWidth > 500) {
+                                vizElement.style.width = '2000px';
+                                vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px';
+                                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                            }
+                            else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+                            var scriptElement = document.createElement('script');
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                        </script>
+                    </div>
+                </section>
+            </div>
+        </nav>
+        <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2596">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <p class="u-small-text u-text u-text-variant u-text-1">Dreamteam </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
