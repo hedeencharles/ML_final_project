@@ -40,7 +40,8 @@ def calc_charges():
         # )
 
     # Redirect back to home page
-    return redirect(url_for('home'), prediction=prediction)
+    # return redirect(url_for('home'), prediction=prediction)
+    return render_template("index.html",prediction=prediction)
 
 
 if __name__ == "__main__":
