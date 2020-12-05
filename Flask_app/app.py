@@ -20,7 +20,7 @@ def ValuePredictor(predict_list):
     return calc_charges[0]
 
 # Route that will receive input form data
-@app.route("/", methods=["GET", "POST"]) # need to figure this line out
+@app.route("/", methods=["GET", "POST"]) 
 def calc_charges():
     if request.method == "POST":
         predict_list = request.form.to_dict()
