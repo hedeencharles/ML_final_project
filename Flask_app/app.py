@@ -15,7 +15,7 @@ def home():
 
 def ValuePredictor(predict_list):
     to_predict = np.array(predict_list).reshape(1,6)
-    loaded_model = pickle.load(open("model.pkl","rb"))
+    loaded_model = pickle.load(open("../Jupyter Notebooks/model.pkl","rb"))
     calc_charges = loaded_model.predict(to_predict)
     return calc_charges[0]
 
