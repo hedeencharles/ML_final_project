@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Landing page
 @app.route("/")
-def index():
+def home():
     return flask.render_template("index.html")
 
 def ValuePredictor(predict_list):
