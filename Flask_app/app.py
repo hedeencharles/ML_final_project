@@ -8,6 +8,8 @@ from flask import Flask, render_template, redirect, url_for, request
 # Create an instance of Flask
 app = Flask(__name__)
 
+app.config["DEBUG"] = True
+
 # Landing page
 @app.route("/")
 def home():
@@ -20,7 +22,7 @@ def ValuePredictor(predict_list):
     return calc_charges[0]
 
 # Route that will receive input form data
-@app.route("/", methods=["GET", "POST"]) 
+@app.route("/", methods=["GET", "POST"])
 def calc_charges():
     if request.method == "POST":
         predict_list = request.form.to_dict()
