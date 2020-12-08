@@ -8,7 +8,7 @@ from flask_cors import CORS
 
 # Create an instance of Flask
 app = Flask(__name__)
-    CORS(app)
+CORS(app)
 
 app.config["DEBUG"] = True
 
