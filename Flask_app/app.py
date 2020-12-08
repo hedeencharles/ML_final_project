@@ -4,9 +4,11 @@ import numpy as np
 import flask
 import pickle
 from flask import Flask, render_template, redirect, url_for, request
+from flask_cors import CORS
 
 # Create an instance of Flask
 app = Flask(__name__)
+    CORS(app)
 
 app.config["DEBUG"] = True
 
@@ -27,7 +29,7 @@ def calc_charges():
     if request.method == "POST":
         predict_list = request.form.to_dict()
         predict_list = list(predict_list.values())
-        # predict_list = list(map(float, to_predict_list))
+        #predict_list = list(map(float, predict_list))
         calc_charges = ValuePredictor(predict_list)
         prediction = float(calc_charges)
 
