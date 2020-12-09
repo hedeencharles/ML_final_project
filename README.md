@@ -1,12 +1,13 @@
 # ML_final_project
 
 ## Cancer Level Data set
-* The objective for this data set was to build a machine lerning model to accurately predict the level of severity of Cancer based on a set of 23 features.
+* The objective for this data set was to build a machine learning model to accurately predict the level of severity of Cancer based on a set of 23 features.
 
-* The conclusion, after attempting to build machine learning models and analyzing the models and data more thoroughly was that the dataset was suspect, as all models resulted in 100% accuracy.  The process the team followed and the analysis steps and conclusion are documented in a Tableau workbook that can be found [here](https://public.tableau.com/profile/paul.hardy#!/vizhome/CancerStudyDataAnalysis/STORY-TheLungCancerLevelDataset?publish=yes)
+* The conclusion, after attempting to build machine learning models and analyzing the models and data more thoroughly was that the dataset was suspect, as all models resulted in 100% accuracy, a situation that results in Overfitting.  
+* The process the team followed and the analysis steps and conclusion are documented in a Tableau workbook that can be found [here.](https://public.tableau.com/profile/paul.hardy#!/vizhome/CancerStudyDataAnalysis/STORY-TheLungCancerLevelDataset?publish=yes)
 
 ## Dataset source:
-* Cancer Dataset is [here](https://www.kaggle.com/rishidamarla/cancer-patients-data)
+* The source of the Cancer Dataset is [here.](https://www.kaggle.com/rishidamarla/cancer-patients-data)
 
 ---
 
