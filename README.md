@@ -1,8 +1,6 @@
-# ML_final_project
+# Health Care Analytics
 
-## 1) Cancer Level Data set
-
-### Objective
+## First dataset: Cancer Level Data set
 * The objective for this data set was to build a machine learning model to accurately predict the level of severity of Cancer based on a set of 23 features.
 
 ### Machine Learning Models and Accuracy
@@ -15,9 +13,8 @@
 
 ---
 
-## 2) Health Insurance Cost Data set
-
-### Objective
+## Second dataset: Health Insurance cost
+## Objective
 * Build a machine learning model that can accurately predict an individuals yearly health insurance charges, based on the following:
   * Model's features (individuals information) will consist of:
       1. Age
