@@ -3,12 +3,12 @@
 ## Objective
 * Build a machine learning model that can accurately predict an individuals yearly health insurance charges, based on the following:
   * Model's features (individuals information) will consist of:
-      1) Age
-      2) Number of children on plan
-      3) BMI (body mass index)
-      4) Gender
-      5) Smoker(y/n)
-      6) Region (Southwest, Southeast, Northwest and Northeast)
+      1. Age
+      2. Number of children on plan
+      3. BMI (body mass index)
+      4. Gender
+      5. Smoker(y/n)
+      6. Region (Southwest, Southeast, Northwest and Northeast)
   * Analyze the dataset and visualize any interesting trends or phenomenon. 
     * Data exploration in Python Notebook to find possible correlations between features.
     * Import dataset into Tableau for visual analysis. 
