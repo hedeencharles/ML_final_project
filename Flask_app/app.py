@@ -30,14 +30,7 @@ model_file = pd.read_pickle("../Jupyter Notebooks/model.pkl")
 def home():
     return flask.render_template("index.html")
 
-# def ValuePredictor(predict_list):
-#     to_predict = np.array(predict_list).reshape(1,6)
-#     loaded_model = pickle.load(open("../Jupyter Notebooks/model.pkl","rb"))
-#     calc_charges = loaded_model.predict(to_predict)
-#     return calc_charges[0]
-
-
-
+# Model runs using passed in variables and outputs the prediction
 def predict_model(age, gender, bmi, children, smoker, region):
     user_inputs = []
     user_inputs.append(age)
@@ -65,12 +58,8 @@ def calc_charges():
         region = request.form["region"]
         prediction = predict_model(age, gender, bmi, no_children, smoker, region)
 
-        # Redirect back to home page
-        # return redirect(url_for('home'), prediction=prediction)
+        # Redirect back to home page with prediction to display
         return render_template("index.html",prediction=round(prediction[0],2))
-
-
-
 
 
 if __name__ == "__main__":
