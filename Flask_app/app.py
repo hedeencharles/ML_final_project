@@ -48,7 +48,6 @@ def predict_model(age, gender, bmi, children, smoker, region):
     user_inputs.append(region)
     print(user_inputs)
     predicted_value = model_file.predict(ct.transform([user_inputs]))
-    
     return(predicted_value)
 
 # Route that will receive input form data
