@@ -7,7 +7,7 @@
     <title>Final project</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 
 <body>
@@ -100,7 +100,7 @@
                                                     <a href="#"
                                                         class="u-border-2 u-border-palette-3-light-2 u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
                                                 </div> -->
-                                                <input type="submit" value="Submit">
+                                                <input id="submit-btn" style="background-color: #E0F2F7" type="submit" value="Submit">
                                             </form>
                                         </div>
                                     </div>
@@ -156,7 +156,8 @@
                                     if (divElement.offsetWidth > 800) {
                                         vizElement.style.width = '1400px';
                                         vizElement.style.minHeight = '450px'; vizElement.style.maxHeight = '887px';
-                                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                        vizElement.style.height = '900px';
+                                        // vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
                                     }
                                     else if (divElement.offsetWidth > 500) {
                                         vizElement.style.width = '1200px';
