@@ -60,9 +60,9 @@ font-size: 15px;
 
 /* Box */
 .box {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  padding: 10px 30px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px;
   color: #213159;
   background-color:#b2d6e0;
 
@@ -88,13 +88,16 @@ font-size: 15px;
 
 /* code for bmi calculator */
 fieldset {
-	width: 300px;
-	margin: 25px 0 0 50px;
-	border: 1px solid #999999;
-	box-shadow: 1px 1px #cccccc;
-	padding: 10px;
+  position: relative;
+  font-size: 1rem;
+  height: auto !important;
+	margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px;
+  color: #213159;
+  background-color:#b2d6e0;
 }
-
+/* 
 label {
 	float: left;
 	width: 140px;
@@ -130,4 +133,4 @@ input {
 	padding: 10px;
 	border: 1px solid #999999;
 	box-shadow: 1px 1px #cccccc;
-}
+} */ */
