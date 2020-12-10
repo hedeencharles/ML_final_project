@@ -13,7 +13,7 @@ CORS(app)
 app.config["DEBUG"] = True
 
 # import dataset and define features as a variable
-dataset = pd.read_csv('../Datasets/insurance.csv')
+dataset = pd.read_csv('Datasets/insurance.csv')
 X = dataset.iloc[:, :-1].values
 
 # OnehotEncoder
@@ -23,7 +23,7 @@ from sklearn.preprocessing import OneHotEncoder
 # [0] is the index of column to apply OneHotEncoding
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [1,4,5])], remainder='passthrough')
 X = np.array(ct.fit_transform(X))
-model_file = pd.read_pickle("../Jupyter Notebooks/model.pkl")
+model_file = pd.read_pickle("Jupyter Notebooks/model.pkl")
 
 # Landing page
 @app.route("/")
