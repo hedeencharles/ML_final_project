@@ -44,6 +44,12 @@
       * *However*, when testing the model with random inputs, we identified that if an individual is a smoker their insurance cost was nearly 50% more then non smokers. 
 
 ### Flask App
+* Loads the Random Forest model at the beginning
+  * This helps with performance for the webpage prediction
+* Receives inputs from the webpage
+* Through the predict_model function, the inputs are compiled into one array, encoded and passed into the model
+* The model runs and outputs the health insurance cost prediction based on those passed in inputs.
+* The model's prediction is then passed back to the webpage to be displayed.
 
 ### Dataset source:
 * Insurance: https://www.kaggle.com/mirichoi0218/insurance
