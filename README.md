@@ -1,5 +1,5 @@
 # Health Care Analytics
-### Checkout our website link [here.](prediction-insurance-cost.herokuapp.com/)
+### Checkout our website link [here.](https://prediction-insurance-cost.herokuapp.com/)
 
 ## First dataset: Cancer Level Data set
 * The objective for this data set was to build a machine learning model to accurately predict the level of severity of Cancer based on a set of 23 features.
