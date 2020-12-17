@@ -1,4 +1,5 @@
 # Health Care Analytics
+### Checkout our website link [here.](https://prediction-insurance-cost.herokuapp.com/)
 
 ## First dataset: Cancer Level Data set
 * The objective for this data set was to build a machine learning model to accurately predict the level of severity of Cancer based on a set of 23 features.
@@ -16,13 +17,16 @@
 ## Second dataset: Health Insurance cost
 ## Objective
 * Build a machine learning model that can accurately predict an individuals yearly health insurance charges, based on the following:
-  * Model's features (individuals information) will consist of:
+  * Model's **features** (individuals information) will consist of:
       1. Age
       2. Number of children on plan
-      3. BMI (body mass index)
+      3. BMI (body mass index), which provides an understanding of the body. Equation = (kg / m^2). "Ideally" (in the eyes of insurers) **18.5 to 24.9**
       4. Gender
       5. Smoker(y/n)
       6. Region (Southwest, Southeast, Northwest and Northeast)
+  * Model's **prediction**: 
+    * Our selected model will aim to accurately predict **yearly insurance cost**. 
+      * This **yearly insurance cost** is reflective of an individuals charges billed by health insurance, includes premiums and deductibles. 
   * Analyze the dataset and visualize any interesting trends or phenomenon. 
     * Data exploration in Python Notebook to find possible correlations between features.
     * Import dataset into Tableau for visual analysis. 
@@ -38,9 +42,15 @@
     * Random Forest Regression!
       * Although the Random Forest did not produce the overall highest accuracy, from what we know about the regressions tested, Random Forest will perform better when given outliers and value that are not within the SVR's insensitive tube. 
       * Random Forest will also provide insight into what features have the most importance to the models predictions. From the feature importance module, we discovered the model is heavily dependent on an individuals BMI and number of children on the plan. 
-      * Because our model is heavily dependent on BMI and number of children, the model struggles to predict insurance cost for individuals with a very low/high BMI and no children. 
+      * *However*, when testing the model with random inputs, we identified that if an individual is a smoker their insurance cost was nearly 50% more then non smokers. 
 
 ### Flask App
+* Loads the Random Forest model at the beginning
+  * This helps with performance for the webpage prediction
+* Receives inputs from the webpage
+* Through the predict_model function, the inputs are compiled into one array, encoded and passed into the model
+* The model runs and outputs the health insurance cost prediction based on those passed in inputs.
+* The model's prediction is then passed back to the webpage to be displayed.
 
 ### Dataset source:
 * Insurance: https://www.kaggle.com/mirichoi0218/insurance
